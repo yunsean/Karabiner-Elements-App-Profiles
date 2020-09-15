@@ -163,13 +163,13 @@ class KarabinerConfiguration {
 
 class FrontApplicationWatcher {
     init(onSwitchTo: @escaping (String) -> Void) {
-        NSWorkspace.shared().notificationCenter.addObserver(forName: NSNotification.Name.NSWorkspaceDidActivateApplication,
+        NSWorkspace.shared.notificationCenter.addObserver(forName: NSWorkspace.didActivateApplicationNotification,
                                                             object: nil,
                                                             queue: OperationQueue.main)
         { (notification) in
             guard
                 let userInfo = notification.userInfo as? [String: Any],
-                let application = userInfo[NSWorkspaceApplicationKey] as? NSRunningApplication,
+                let application = userInfo[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication,
                 let bundleIdentifier = application.bundleIdentifier
             else {
                 NSLog("Invalid NSWorkspaceDidActivateApplication userInfo")

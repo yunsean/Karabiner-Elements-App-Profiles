@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E177E5AB1E491CB50024F193 /* Karabiner-Elements App Profiles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Karabiner-Elements App Profiles"; path = "Karabiner-Elements-App-Profiles"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E177E5AB1E491CB50024F193 /* Karabiner-Elements-App-Profiles */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Karabiner-Elements-App-Profiles"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E177E5AE1E491CB50024F193 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 		E177E5AC1E491CB50024F193 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E177E5AB1E491CB50024F193 /* Karabiner-Elements App Profiles */,
+				E177E5AB1E491CB50024F193 /* Karabiner-Elements-App-Profiles */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +79,7 @@
 			);
 			name = "Karabiner-Elements-App-Profiles";
 			productName = "Karabiner-Elements App Profiles";
-			productReference = E177E5AB1E491CB50024F193 /* Karabiner-Elements App Profiles */;
+			productReference = E177E5AB1E491CB50024F193 /* Karabiner-Elements-App-Profiles */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -104,6 +104,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = E177E5A21E491CB50024F193;
@@ -222,7 +223,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = CYEL96ZVC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -231,7 +232,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = CYEL96ZVC2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
